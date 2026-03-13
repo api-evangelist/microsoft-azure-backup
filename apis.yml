@@ -1,0 +1,32 @@
+aid: microsoft-azure-backup
+url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-backup/refs/heads/main/apis.yml
+apis:
+  - aid: microsoft-azure-backup:rest-api
+    name: Azure Backup REST API
+    tags:
+      - Backup
+      - Disaster Recovery
+      - Data Protection
+      - Recovery Services
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://management.azure.com/
+    humanURL: https://learn.microsoft.com/en-us/rest/api/backup/
+    properties:
+      - url: https://learn.microsoft.com/en-us/rest/api/backup/
+        type: Documentation
+    description: >-
+      Azure Backup REST API enables programmatic management of backup policies, protected items, recovery points, and restore operations. It supports backing up VMs, SQL databases, file shares, and SAP HANA workloads through Recovery Services vaults.
+common:
+  - type: Portal
+    url: https://portal.azure.com/
+  - type: Pricing
+    url: https://azure.microsoft.com/en-us/pricing/
+  - type: Terms of Service
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+  - type: Privacy Policy
+    url: https://privacy.microsoft.com/en-us/privacystatement
+  - type: Support
+    url: https://support.microsoft.com/
+maintainers:
+  - name: Kin Lane
+    email: kin@apievangelist.com
