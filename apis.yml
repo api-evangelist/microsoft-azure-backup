@@ -24,6 +24,8 @@ apis:
     baseURL: https://management.azure.com/
     humanURL: https://learn.microsoft.com/en-us/rest/api/backup/
     properties:
+      - url: openapi/microsoft-azure-backup-openapi.yml
+        type: OpenAPI
       - url: https://learn.microsoft.com/en-us/rest/api/backup/
         type: Documentation
     description: >-
