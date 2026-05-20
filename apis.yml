@@ -7,44 +7,46 @@ url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-backup/ref
 created: '2026-03-13'
 modified: '2026-05-19'
 tags:
-- Backup
-- Data Protection
-- Disaster Recovery
-- Recovery Services
-apis:
-- aid: microsoft-azure-backup:rest-api
-  name: Azure Backup REST API
-  tags:
   - Backup
   - Data Protection
   - Disaster Recovery
   - Recovery Services
-  image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-  baseURL: https://management.azure.com/
-  humanURL: https://learn.microsoft.com/en-us/rest/api/backup/
-  properties:
-  - url: openapi/microsoft-azure-backup-openapi.yml
-    type: OpenAPI
-  - url: https://learn.microsoft.com/en-us/rest/api/backup/
-    type: Documentation
-  - type: NaftikoCapability
-    url: capabilities/microsoft-azure-backup-operations.yaml
-  - type: NaftikoCapability
-    url: capabilities/microsoft-azure-backup-vaults.yaml
-  description: Azure Backup REST API enables programmatic management of backup policies, protected items, recovery points,
-    and restore operations. It supports backing up VMs, SQL databases, file shares, and SAP HANA workloads through Recovery
-    Services vaults.
+apis:
+  - aid: microsoft-azure-backup:rest-api
+    name: Azure Backup REST API
+    tags:
+    - Backup
+    - Data Protection
+    - Disaster Recovery
+    - Recovery Services
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    baseURL: https://management.azure.com/
+    humanURL: https://learn.microsoft.com/en-us/rest/api/backup/
+    properties:
+    - url: openapi/microsoft-azure-backup-openapi.yml
+      type: OpenAPI
+    - url: https://learn.microsoft.com/en-us/rest/api/backup/
+      type: Documentation
+    - type: NaftikoCapability
+      url: capabilities/microsoft-azure-backup-operations.yaml
+    - type: NaftikoCapability
+      url: capabilities/microsoft-azure-backup-vaults.yaml
+    description: Azure Backup REST API enables programmatic management of backup policies, protected items, recovery points,
+      and restore operations. It supports backing up VMs, SQL databases, file shares, and SAP HANA workloads through Recovery
+      Services vaults.
 common:
-- type: Portal
-  url: https://portal.azure.com/
-- type: Pricing
-  url: https://azure.microsoft.com/en-us/pricing/
-- type: TermsOfService
-  url: https://www.microsoft.com/en-us/legal/terms-of-use
-- type: PrivacyPolicy
-  url: https://privacy.microsoft.com/en-us/privacystatement
-- type: Support
-  url: https://support.microsoft.com/
+  - type: GitHubOrganization
+    url: https://github.com/Azure
+  - type: Portal
+    url: https://portal.azure.com/
+  - type: Pricing
+    url: https://azure.microsoft.com/en-us/pricing/
+  - type: TermsOfService
+    url: https://www.microsoft.com/en-us/legal/terms-of-use
+  - type: PrivacyPolicy
+    url: https://privacy.microsoft.com/en-us/privacystatement
+  - type: Support
+    url: https://support.microsoft.com/
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
