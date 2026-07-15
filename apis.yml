@@ -33,6 +33,8 @@ apis:
       restore operations. It supports backing up VMs, SQL databases, file shares, and SAP HANA workloads through
       Recovery Services vaults.
 common:
+  - type: AgenticAccess
+    url: agentic-access/microsoft-azure-backup-agentic-access.yml
   - type: DomainSecurity
     url: security/microsoft-azure-backup-domain-security.yml
   - type: Authentication
