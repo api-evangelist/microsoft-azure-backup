@@ -3,7 +3,20 @@ name: Azure Backup
 description: >-
   Learn how Azure Backup contributes to your business continuity and disaster recovery (BCDR) strategy by backing up
   data to the Azure clouds.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/microsoft-azure-backup.png
 url: https://raw.githubusercontent.com/api-evangelist/microsoft-azure-backup/refs/heads/main/apis.yml
 created: '2026-03-13'
 modified: '2026-05-19'
@@ -13,25 +26,30 @@ tags:
   - Disaster Recovery
   - Recovery Services
 apis:
-  - aid: microsoft-azure-backup:rest-api
-    name: Azure Backup REST API
-    tags:
-      - Backup
-      - Data Protection
-      - Disaster Recovery
-      - Recovery Services
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://management.azure.com/
-    humanURL: https://learn.microsoft.com/en-us/rest/api/backup/
-    properties:
-      - url: openapi/microsoft-azure-backup-openapi.yml
-        type: OpenAPI
-      - url: https://learn.microsoft.com/en-us/rest/api/backup/
-        type: Documentation
-    description: >-
-      Azure Backup REST API enables programmatic management of backup policies, protected items, recovery points, and
-      restore operations. It supports backing up VMs, SQL databases, file shares, and SAP HANA workloads through
-      Recovery Services vaults.
+- aid: microsoft-azure-backup:microsoft-azure-backup-operations-api
+  name: Azure Backup Operations API
+  description: Operations operations
+  humanURL: https://learn.microsoft.com/en-us/rest/api/backup/
+  baseURL: https://management.azure.com/
+  tags:
+  - Operations
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-azure-backup-operations-api-openapi.yml
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/backup/
+- aid: microsoft-azure-backup:microsoft-azure-backup-vaults-api
+  name: Azure Backup Vaults API
+  description: Vaults operations
+  humanURL: https://learn.microsoft.com/en-us/rest/api/backup/
+  baseURL: https://management.azure.com/
+  tags:
+  - Vaults
+  properties:
+  - type: OpenAPI
+    url: openapi/microsoft-azure-backup-vaults-api-openapi.yml
+  - type: Documentation
+    url: https://learn.microsoft.com/en-us/rest/api/backup/
 common:
   - type: AgenticAccess
     url: agentic-access/microsoft-azure-backup-agentic-access.yml
