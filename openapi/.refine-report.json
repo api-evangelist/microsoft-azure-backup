@@ -1,0 +1,16 @@
+{
+  "provider": "microsoft-azure-backup",
+  "sources": [
+    "microsoft-azure-backup-operations-api-openapi.yml",
+    "microsoft-azure-backup-vaults-api-openapi.yml"
+  ],
+  "outputs": [
+    "microsoft-azure-backup-operations-api-openapi.yml",
+    "microsoft-azure-backup-vaults-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
