@@ -3,6 +3,7 @@ name: Azure Backup
 description: >-
   Learn how Azure Backup contributes to your business continuity and disaster recovery (BCDR) strategy by backing up
   data to the Azure clouds.
+specificationVersion: '0.23'
 accessModel:
   pricing: freemium
   onboarding: self-serve
