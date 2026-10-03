@@ -170,16 +170,6 @@ paths:
                 $ref: '#/components/schemas/ErrorResponse'
 components:
   schemas:
-    ResourceList:
-      type: object
-      properties:
-        value:
-          type: array
-          items:
-            $ref: '#/components/schemas/Resource'
-        nextLink:
-          type: string
-          description: URL to the next page of results.
     Resource:
       type: object
       properties:
@@ -214,14 +204,17 @@ components:
               type: string
             target:
               type: string
+    ResourceList:
+      type: object
+      properties:
+        value:
+          type: array
+          items:
+            $ref: '#/components/schemas/Resource'
+        nextLink:
+          type: string
+          description: URL to the next page of results.
   parameters:
-    subscriptionId:
-      name: subscriptionId
-      in: path
-      required: true
-      description: The ID of the target subscription.
-      schema:
-        type: string
     apiVersion:
       name: api-version
       in: query
@@ -234,6 +227,13 @@ components:
       in: path
       required: true
       description: The name of the resource group.
+      schema:
+        type: string
+    subscriptionId:
+      name: subscriptionId
+      in: path
+      required: true
+      description: The ID of the target subscription.
       schema:
         type: string
   securitySchemes:
