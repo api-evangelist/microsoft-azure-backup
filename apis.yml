@@ -67,6 +67,12 @@ apis:
   - type: Documentation
     url: https://learn.microsoft.com/en-us/rest/api/backup/
 common:
+  - type: Plans
+    url: plans/microsoft-azure-backup-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/microsoft-azure-backup-rate-limits.yml
+  - type: FinOps
+    url: finops/microsoft-azure-backup-finops.yml
   - type: Website
     url: https://www.microsoft.com/
   - type: AgenticAccess
